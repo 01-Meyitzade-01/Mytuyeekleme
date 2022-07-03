@@ -48,7 +48,7 @@ while True:
     print(lg+'[1] Yeni hesap ekle'+n)
     print(lg+'[2] Tüm yasaklı hesapları filtrele'+n)
     print(lg+'[3] Belirli hesapları sil'+n)
-    print(lg+'[4] Astra'nızı güncelleyin'+n)
+    print(lg+'[4] Astranızı güncelleyin'+n)
     print(lg+'[5] Çıkış'+n)
     a = int(input('\nSeçimini gir: '))
     if a == 1:
@@ -68,7 +68,7 @@ while True:
                 c.start(number)
                 print(f'{lg}[+] Giriş başarılı')
                 c.disconnect()
-            input(f'\nAna menüye gitmek için enter'a basın...')
+            input(f'\nAna menüye gitmek için entera basın...')
 
         g.close()
     elif a == 2:
@@ -99,7 +99,7 @@ while True:
                         banned_accs.append(account)
             if len(banned_accs) == 0:
                 print(lg+'Tebrikler! Yasaklı hesap yok')
-                input('\nAna menüye gitmek için enter'a basın...')
+                input('\nAna menüye gitmek için entera basın...')
             else:
                 for m in banned_accs:
                     accounts.remove(m)
@@ -109,7 +109,7 @@ while True:
                         pickle.dump([Phone], k)
                 k.close()
                 print(lg+'[i] Engellenen tüm hesaplar kaldırıldı'+n)
-                input('\nAna menüye gitmek için enter'a basın...')
+                input('\nAna menüye gitmek için entera basın...')
 
     elif a == 3:
         accs = []
@@ -137,7 +137,7 @@ while True:
         for account in accs:
             pickle.dump(account, f)
         print(f'\n{lg}[+] Hesap Silindi{n}')
-        input(f'\nAna menüye gitmek için enter'a basın...')
+        input(f'\nAna menüye gitmek için entera basın...')
         f.close()
     elif a == 4:
         # aşağıdaki snippet için github.com/th3unkn0n adresine teşekkürler
@@ -163,14 +163,14 @@ while True:
                 os.system('curl -l -O https://raw.githubusercontent.com/Cryptonian007/Astra/main/add.py')
                 os.system('curl -l -O https://raw.githubusercontent.com/Cryptonian007/Astra/main/manager.py')
                 print(f'{lg}[*] Updated to version: {version.text}')
-                input('Çıkmak için enter'a basın...')
+                input('Çıkmak için entera basın...')
                 exit()
             else:
                 print(f'{lg}[!] Update aborted.')
-                input('Ana menüye gitmek için enter'a basın...')
+                input('Ana menüye gitmek için entera basın...')
         else:
             print(f'{lg}[i] Astra'nız zaten güncel')
-            input('Ana menüye gitmek için enter'a basın...')
+            input('Ana menüye gitmek için entera basın...')
     elif a == 5:
         clr()
         banner()
