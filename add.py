@@ -79,7 +79,7 @@ print('\n' + info + lg + ' Checking for banned accounts...' + rs)
 for a in accounts:
     phn = a[0]
     print(f'{plus}{grey} Checking {lg}{phn}')
-    clnt = TelegramClient(f'sessions/{phn}', 3910389, '86f861352f0ab76a251866059a6adbd6')
+    clnt = TelegramClient(f'sessions/{phn}', 3939406, 'BAAqza4DFV-aEvgEAqsr37s1rxNqQE92ymPBIGOHSGsTsrK3ma1X_PrFYHAgvKWI0wkdmw3uUyYsx5gsB1DKGlaP6446yE1mqnJDJUvjX7vFj0syb6OVGpSG1OfBI0xRFeqexSV9vbeS2x2VWoFIDROLy-bpsuXe9l6eoI5H1lin2IPcfop_emdks3ypUsx3LdB2s_zra6eLE-I4Js-gpq05KGzgcALmPspPpBZjO9RKGX6mECxyNQG8wkTxScZzcJIdA-syp5zIzzaN8419WW1H6A79HPg8HBtTDFm-vRrdepOg-vvRAPBE3IbI3puZBoNwNTT2SiMHHC_x9gwBCrTaWwtv0QA')
     clnt.connect()
     banned = []
     if not clnt.is_user_authorized():
@@ -170,7 +170,7 @@ adding_status = 0
 approx_members_count = 0
 for acc in to_use:
     stop = index + 60
-    c = TelegramClient(f'sessions/{acc[0]}', 3910389 , '86f861352f0ab76a251866059a6adbd6')
+    c = TelegramClient(f'sessions/{acc[0]}', 3939406 , 'BAAqza4DFV-aEvgEAqsr37s1rxNqQE92ymPBIGOHSGsTsrK3ma1X_PrFYHAgvKWI0wkdmw3uUyYsx5gsB1DKGlaP6446yE1mqnJDJUvjX7vFj0syb6OVGpSG1OfBI0xRFeqexSV9vbeS2x2VWoFIDROLy-bpsuXe9l6eoI5H1lin2IPcfop_emdks3ypUsx3LdB2s_zra6eLE-I4Js-gpq05KGzgcALmPspPpBZjO9RKGX6mECxyNQG8wkTxScZzcJIdA-syp5zIzzaN8419WW1H6A79HPg8HBtTDFm-vRrdepOg-vvRAPBE3IbI3puZBoNwNTT2SiMHHC_x9gwBCrTaWwtv0QA')
     print(f'{plus}{grey} User: {cy}{acc[0]}{lg} -- {cy}Starting session... ')
     c.start(acc[0])
     acc_name = c.get_me().first_name
