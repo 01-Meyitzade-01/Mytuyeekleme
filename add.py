@@ -1,9 +1,9 @@
 '''
-=============SON OF GENISYS=====================
-Astra members adding script
-Coded by a dumbass kid- github.com/Cryptonian007
-Apologies if anything in the code is dumb :)
-Copy with credits
+============= MEYITZADE47======================
+Astra üyeleri komut dosyası ekliyor
+Aptal bir çocuk tarafından kodlandı- github.com/Cryptonian007
+Koddaki herhangi bir şey aptalsa özür dilerim :)
+Kredi ile kopyalayın
 ************************************************
 '''
 
